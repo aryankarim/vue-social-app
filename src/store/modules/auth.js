@@ -41,7 +41,7 @@ const actions = {
     } else {
       localStorage.setItem('social-app-token', data.accessToken);
       localStorage.setItem('social-app-userData', JSON.stringify(data.user));
-      commit('setUser', { userInfo: data, loggedIn: true });
+      commit('setUser', { userInfo: data.user, loggedIn: true });
       return 'Logged in successfully!';
     }
   },
