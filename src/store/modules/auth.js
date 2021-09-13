@@ -17,13 +17,17 @@ const actions = {
       body: JSON.stringify(userData),
     });
     const data = await res.json();
-
-    localStorage.setItem('social-app-token', data.accessToken);
-    localStorage.setItem('social-app-userData', JSON.stringify(data.user));
-    commit('setUser', data.user);
+    if (res.status < 400) {
+      localStorage.setItem('social-app-token', data.accessToken);
+      localStorage.setItem('social-app-userData', JSON.stringify(data.user));
+      commit('setUser', { userInfo: data.user, loggedIn: true });
+      return 'Sign up successful!';
+    } else {
+      return data;
+    }
   },
   // eslint-disable-next-line no-unused-vars
-  async verifyLogin({ commit }, loginCredential) {
+  async loginUser({ commit }, loginCredential) {
     const res = await fetch(`api/login`, {
       method: 'POST',
       headers: {
@@ -32,17 +36,42 @@ const actions = {
       body: JSON.stringify(loginCredential),
     });
     const data = await res.json();
-    console.log(data);
     if (res.status > 399) {
-      alert('login fail');
+      return data;
     } else {
+      localStorage.setItem('social-app-token', data.accessToken);
+      localStorage.setItem('social-app-userData', JSON.stringify(data.user));
       commit('setUser', { userInfo: data, loggedIn: true });
+      return 'Logged in successfully!';
     }
+  },
+  async verifyLogin({ commit }) {
+    const token = localStorage.getItem('social-app-token');
+    const userId = JSON.parse(localStorage.getItem('social-app-userData'))?.id;
+    if (!userId) {
+      return;
+    }
+    const res = await fetch(`api/400/users/${userId}`, {
+      method: 'GET',
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
+    if (res.status < 400) {
+      commit('setLoggedIn', true);
+    }
+  },
+  logout({ commit }) {
+    commit('setLoggedIn', false);
+    localStorage.removeItem('social-app-token');
+    localStorage.removeItem('social-app-userData');
   },
 };
 
 const mutations = {
   setUser: (state, user) => (state.user = user),
+  setLoggedIn: (state, value) =>
+    (state.user = { ...state.user, loggedIn: value }),
 };
 
 export default {

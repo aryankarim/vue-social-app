@@ -1,6 +1,5 @@
 <template>
   <Header />
-  {{ user }}
   <router-view></router-view>
 </template>
 
@@ -15,6 +14,9 @@ export default {
   computed: mapGetters(['user']),
   methods: {
     ...mapActions(['verifyLogin']),
+  },
+  created() {
+    this.verifyLogin();
   },
 };
 </script>
