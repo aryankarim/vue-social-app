@@ -1,8 +1,11 @@
 <template>
   <div class="topnav">
-    <router-link @click="logoutUser" to="/login">{{
-      user.loggedIn ? 'Logout' : 'Login'
-    }}</router-link>
+    <router-link
+      @click="logoutUser"
+      to="/login"
+      :style="[user.loggedIn ? { background: '#ff6060' } : '']"
+      >{{ user.loggedIn ? 'Logout' : 'Login' }}</router-link
+    >
     <router-link to="/signup">Sign Up</router-link>
     <router-link to="/">Home</router-link>
     <router-link to="/profile">Profile</router-link>
