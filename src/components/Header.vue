@@ -1,6 +1,11 @@
 <template>
-  <span>Login </span>
-  <span>Register </span>
+  <span><router-link to="/login">Login</router-link> </span>
+  <br />
+  <br />
+  <span><router-link to="/signup">Sign Up</router-link> </span>
+  <br />
+  <br />
+  <span><router-link to="/">Home</router-link> </span>
 </template>
 
 <script>

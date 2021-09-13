@@ -1,14 +1,20 @@
 <template>
   <Header />
+  {{ user }}
   <router-view></router-view>
 </template>
 
 <script>
+import { mapGetters, mapActions } from 'vuex';
 import Header from './components/Header.vue';
 export default {
   name: 'App',
   components: {
     Header,
+  },
+  computed: mapGetters(['user']),
+  methods: {
+    ...mapActions(['verifyLogin']),
   },
 };
 </script>

@@ -1,0 +1,47 @@
+{
+  "users": [
+    {
+      "email": "a@gmail.com",
+      "password": "$2a$10$Qe69A5QVMyqp9PXFNhHkNOVUEss2FYOxJbAoHjYcPruDOrsNVBA6S",
+      "username": "am15489",
+      "id": 1
+    },
+    {
+      "email": "as@gmail.com",
+      "password": "$2a$10$0kjbvZ/r6Xj/wwZqOZCcR.pVC1TxXc6OtS1vFd8OAuaAV89HHkQnG",
+      "username": "am15489",
+      "id": 2
+    },
+    {
+      "email": "aryanmajid97@gmail.com",
+      "password": "$2a$10$PtzfU3GGNsn7n2/0GAq8rO8VFHxaELOEgxf2sK0P.d4FUh3QAc3yy",
+      "username": "am15489",
+      "id": 3
+    },
+    {
+      "email": "ass@gmail.com",
+      "password": "$2a$10$CP8TeXoXhip4OQ/u9x09F.YN8zx49M.9i/fkUV2e.whmGbLttAQIy",
+      "username": "am15489",
+      "id": 4
+    },
+    {
+      "email": "arya@gmail.com",
+      "password": "$2a$10$eSmrzuZvDAi/vy14yUHPueGik6bS1yfqlIXgkRPsqmGlk0k5tC/pi",
+      "username": "aryan_majee",
+      "id": 5
+    },
+    {
+      "email": "aryanmajiid@gmail.com",
+      "password": "$2a$10$GMQ51jvBWSB/3K7hG.m93uU5xUFKbFj3zRAkg/HfEnsLkwsjuyl.a",
+      "username": "aryan_majee",
+      "id": 6
+    },
+    {
+      "email": "aryanmajid1@gmail.com",
+      "password": "$2a$10$Vb77Rp5CxxtaCT4SuUj0fOLLLx3sqlSpxmC296BfG2w/RSoCyCRIC",
+      "username": "am15489",
+      "id": 7
+    }
+  ],
+  "posts": []
+}
