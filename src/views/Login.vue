@@ -6,7 +6,7 @@
       <input
         required
         v-model="email"
-        type="text"
+        type="email"
         placeholder="Email"
         autocomplete
       />
@@ -20,7 +20,7 @@
       />
       <div>{{ feedback }}</div>
       <hr />
-      <input type="submit" value="register" />
+      <input type="submit" value="Login" />
     </form>
   </div>
 </template>
@@ -51,7 +51,6 @@ export default {
 </script>
 
 <style scoped>
-input[type='text'],
 input[type='password'],
 input[type='email'] {
   width: 100%;
