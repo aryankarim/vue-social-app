@@ -72,6 +72,9 @@ export default {
 </script>
 
 <style scoped>
+form {
+  margin: 0 15%;
+}
 input[type='text'],
 input[type='password'],
 input[type='email'] {
