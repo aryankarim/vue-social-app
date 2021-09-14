@@ -22,10 +22,25 @@ const actions = {
 
     commit('addNewPost', data);
   },
+  // eslint-disable-next-line no-unused-vars
+  async fetchPosts({ commit }) {
+    const token = localStorage.getItem('social-app-token');
+    const res = await fetch('api/640/posts', {
+      method: 'GET',
+      headers: {
+        'Content-type': 'application/json',
+        Authorization: `Bearer ${token}`,
+      },
+    });
+    const data = await res.json();
+    console.log(data);
+    commit('setPosts', data);
+  },
 };
 
 const mutations = {
   addNewPost: (state, newPost) => state.posts.push(newPost),
+  setPosts: (state, posts) => (state.posts = posts),
 };
 
 export default {

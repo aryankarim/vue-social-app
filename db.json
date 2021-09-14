@@ -11,6 +11,12 @@
       "password": "$2a$10$IMKmKmnyU.WhTIVLfOQNf.26x.Gxc1Wm9C3k1eezQZ2sxScbItb0i",
       "username": "lmao",
       "id": 2
+    },
+    {
+      "email": "aryan@gmail.com",
+      "password": "$2a$10$eB1qNyGmEVP1FgJgs5SD6OJAIrustTi0MAT3FYPS66t/jjuoOTnA.",
+      "username": "aryan",
+      "id": 3
     }
   ],
   "posts": [
@@ -55,6 +61,24 @@
       "userId": 1,
       "time": "9/14/2021, 4:16:56 AM",
       "id": 7
+    },
+    {
+      "text": "hi",
+      "userId": 1,
+      "time": "9/14/2021, 4:37:18 AM",
+      "id": 8
+    },
+    {
+      "text": "This is a serious post just like tweeters post this is an important post. this is some long text",
+      "userId": 1,
+      "time": "9/14/2021, 4:51:10 AM",
+      "id": 9
+    },
+    {
+      "text": "Hello world im a new user my email is aryan@gmail.com",
+      "userId": 3,
+      "time": "9/14/2021, 4:53:48 AM",
+      "id": 10
     }
   ]
 }

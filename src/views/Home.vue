@@ -41,10 +41,13 @@ export default {
   },
   computed: mapGetters(['user']),
   methods: {
-    ...mapActions(['addNewPost']),
+    ...mapActions(['addNewPost', 'fetchPosts']),
     addPost() {
       this.addNewPost({ text: this.text, userId: this.user.userInfo.id });
     },
+  },
+  created() {
+    this.fetchPosts();
   },
 };
 </script>
@@ -63,28 +66,13 @@ export default {
   box-sizing: border-box;
 }
 
-.column {
-  float: left;
-  width: 50%;
-  padding: 0 10px;
-}
-
-.row {
-  margin: 0 -5px;
-}
-
-.row:after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   text-align: center;
   background-color: #f1f1f1;
   position: relative;
+  margin: 15px 15px;
 }
 
 .card .date {
