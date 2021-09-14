@@ -23,6 +23,12 @@
       "password": "$2a$10$CF2C7NgYdc2W.LOt8uV5l.yaZLRz22Dpc289iFqU.cZGK76vbAdMW",
       "username": "aryan",
       "id": 4
+    },
+    {
+      "email": "aryan1@gmail.com",
+      "password": "$2a$10$fjSwV8f4O97OYjSIYx.SQOPGKTUfqX1zJk3V/qK/KUJvrCkM7DFim",
+      "username": "Aryan Majeed",
+      "id": 5
     }
   ],
   "posts": [
@@ -49,6 +55,12 @@
       "userId": 1,
       "time": "9/14/2021, 1:49:30 PM",
       "id": 12
+    },
+    {
+      "text": "Hey the router and vuex is working fine ig",
+      "userId": 1,
+      "time": "9/14/2021, 4:08:01 PM",
+      "id": 13
     }
   ]
 }
