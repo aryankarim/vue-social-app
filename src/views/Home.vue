@@ -20,29 +20,36 @@
       </div>
     </div>
     <div class="innerContainer">
-      <div><h2>Today's Feed</h2></div>
-      <div class="row">
-        <div class="column">
-          <div class="card">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-            perspiciatis illum libero cupiditate ducimus ut, quasi nam
-            doloremque! Culpa inventore deserunt quidem magnam iste nobis harum
-            quisquam commodi aliquid laborum.
-            <small class="date">Posted on: 12/12/2021</small>
-          </div>
-        </div>
-      </div>
+      <PostList />
     </div>
   </div>
 </template>
 
 <script>
+import { mapActions, mapGetters } from 'vuex';
+import PostList from '../components/PostList.vue';
 export default {
   name: 'Home',
+  components: {
+    PostList,
+  },
+  data() {
+    return {
+      text: '',
+      feedback: '',
+    };
+  },
+  computed: mapGetters(['user']),
+  methods: {
+    ...mapActions(['addNewPost']),
+    addPost() {
+      this.addNewPost({ text: this.text, userId: this.user.userInfo.id });
+    },
+  },
 };
 </script>
 
-<style scoped>
+<style>
 .innerContainer {
   float: left;
   width: 50%;
@@ -86,14 +93,14 @@ export default {
   right: 0;
   color: #3677b3;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .column {
     width: 100%;
     display: block;
     margin-bottom: 20px;
   }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 500px) {
   .innerContainer {
     width: 100%;
     display: block;

@@ -57,12 +57,13 @@ const actions = {
         Authorization: `Bearer ${token}`,
       },
     });
+    const data = await res.json();
     if (res.status < 400) {
-      commit('setLoggedIn', true);
+      commit('setUser', { userInfo: data, loggedIn: true });
     }
   },
   logout({ commit }) {
-    commit('setLoggedIn', false);
+    commit('setUser', { userInfo: {}, loggedIn: false });
     localStorage.removeItem('social-app-token');
     localStorage.removeItem('social-app-userData');
   },
@@ -70,8 +71,6 @@ const actions = {
 
 const mutations = {
   setUser: (state, user) => (state.user = user),
-  setLoggedIn: (state, value) =>
-    (state.user = { ...state.user, loggedIn: value }),
 };
 
 export default {
