@@ -1,14 +1,15 @@
 <template>
   <div :class="navBarClass">
+    <router-link to="/">Home</router-link>
+    <router-link to="/profile">Profile</router-link>
+    <router-link to="/signup">Sign Up</router-link>
     <router-link
       @click="logoutUser"
       to="/login"
       :style="[user.loggedIn ? { background: '#ff6060' } : '']"
       >{{ user.loggedIn ? 'Logout' : 'Login' }}</router-link
     >
-    <router-link to="/signup">Sign Up</router-link>
-    <router-link to="/">Home</router-link>
-    <router-link to="/profile">Profile</router-link>
+
     <div class="icon" @click="barClick">
       <i class="fa fa-bars fa-2x"></i>
     </div>
@@ -69,7 +70,7 @@ export default {
     float: right;
     display: block;
     color: white;
-    margin: 4px 10px 0 0;
+    margin: 8px 10px 0 0;
   }
   .topnav.responsive {
     position: relative;

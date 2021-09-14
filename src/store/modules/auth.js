@@ -60,6 +60,7 @@ const actions = {
     const data = await res.json();
     if (res.status < 400) {
       commit('setUser', { userInfo: data, loggedIn: true });
+      return true;
     }
   },
   logout({ commit }) {

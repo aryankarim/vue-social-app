@@ -15,7 +15,11 @@ export default {
     ...mapActions(['verifyLogin']),
   },
   created() {
-    this.verifyLogin();
+    this.verifyLogin().then((logged) => {
+      if (logged) {
+        this.$router.push('/');
+      }
+    });
   },
 };
 </script>
