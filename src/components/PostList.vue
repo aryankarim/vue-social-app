@@ -6,15 +6,18 @@
     </h2>
   </div>
   <div class="card" :key="post.id" v-for="post in posts">
-    {{ post.text }}
-    <small class="date">Posted on: 12/12/2021</small>
+    <PostItem :post="post" />
   </div>
 </template>
 
 <script>
 import { mapActions, mapGetters } from 'vuex';
+import PostItem from './PostItem.vue';
 export default {
   name: 'PostList',
+  components: {
+    PostItem,
+  },
   computed: mapGetters(['posts']),
   methods: {
     ...mapActions(['fetchPosts']),
