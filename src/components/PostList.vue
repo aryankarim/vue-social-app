@@ -2,11 +2,8 @@
   <div><h2>Today's Feed</h2></div>
   <div class="row">
     <div class="column">
-      <div class="card">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-        perspiciatis illum libero cupiditate ducimus ut, quasi nam doloremque!
-        Culpa inventore deserunt quidem magnam iste nobis harum quisquam commodi
-        aliquid laborum.
+      <div class="card" :key="post.id" v-for="post in posts">
+        {{ post.text }}
         <small class="date">Posted on: 12/12/2021</small>
       </div>
     </div>
@@ -14,7 +11,11 @@
 </template>
 
 <script>
-export default {};
+import { mapGetters } from 'vuex';
+export default {
+  name: 'PostList',
+  computed: mapGetters(['posts']),
+};
 </script>
 
 <style></style>

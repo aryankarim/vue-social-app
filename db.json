@@ -5,7 +5,56 @@
       "password": "$2a$10$N72.T/DyPas2HClyIZIKEePcJCjPjKYVL8iZndWgRuCR7hquDk6Ju",
       "username": "aryan",
       "id": 1
+    },
+    {
+      "email": "a3@gmail.com",
+      "password": "$2a$10$IMKmKmnyU.WhTIVLfOQNf.26x.Gxc1Wm9C3k1eezQZ2sxScbItb0i",
+      "username": "lmao",
+      "id": 2
     }
   ],
-  "posts": []
+  "posts": [
+    {
+      "text": "frfrfrf",
+      "userId": 1,
+      "time": "9/14/2021, 4:10:44 AM",
+      "id": 1
+    },
+    {
+      "text": "frfrfrf",
+      "userId": 1,
+      "time": "9/14/2021, 4:10:45 AM",
+      "id": 2
+    },
+    {
+      "text": "frfrfrf",
+      "userId": 1,
+      "time": "9/14/2021, 4:10:46 AM",
+      "id": 3
+    },
+    {
+      "text": "aryan",
+      "userId": 2,
+      "time": "9/14/2021, 4:12:46 AM",
+      "id": 4
+    },
+    {
+      "text": "lmao",
+      "userId": 2,
+      "time": "9/14/2021, 4:12:51 AM",
+      "id": 5
+    },
+    {
+      "text": "jjj",
+      "userId": 1,
+      "time": "9/14/2021, 4:16:54 AM",
+      "id": 6
+    },
+    {
+      "text": "jjj",
+      "userId": 1,
+      "time": "9/14/2021, 4:16:56 AM",
+      "id": 7
+    }
+  ]
 }
