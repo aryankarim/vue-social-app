@@ -32,7 +32,8 @@
           autocomplete
         />
       </div>
-      {{ feedback }}
+      <h3>{{ feedback }}</h3>
+
       <hr />
       <input type="submit" value="register" />
     </form>

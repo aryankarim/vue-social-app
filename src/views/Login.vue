@@ -18,7 +18,7 @@
         placeholder="Password"
         autocomplete
       />
-      <div>{{ feedback }}</div>
+      <h3>{{ feedback }}</h3>
       <hr />
       <input type="submit" value="Login" />
     </form>

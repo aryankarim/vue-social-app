@@ -11,7 +11,6 @@ const routes = [
     name: 'Home',
     component: Home,
     beforeEnter: (to, from, next) => {
-      console.log(store.getters.user.loggedIn);
       if (store.getters.user.loggedIn) {
         next();
       } else {

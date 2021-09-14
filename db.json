@@ -17,57 +17,15 @@
       "password": "$2a$10$eB1qNyGmEVP1FgJgs5SD6OJAIrustTi0MAT3FYPS66t/jjuoOTnA.",
       "username": "aryan",
       "id": 3
+    },
+    {
+      "email": "a4@gmail.com",
+      "password": "$2a$10$CF2C7NgYdc2W.LOt8uV5l.yaZLRz22Dpc289iFqU.cZGK76vbAdMW",
+      "username": "aryan",
+      "id": 4
     }
   ],
   "posts": [
-    {
-      "text": "frfrfrf",
-      "userId": 1,
-      "time": "9/14/2021, 4:10:44 AM",
-      "id": 1
-    },
-    {
-      "text": "frfrfrf",
-      "userId": 1,
-      "time": "9/14/2021, 4:10:45 AM",
-      "id": 2
-    },
-    {
-      "text": "frfrfrf",
-      "userId": 1,
-      "time": "9/14/2021, 4:10:46 AM",
-      "id": 3
-    },
-    {
-      "text": "aryan",
-      "userId": 2,
-      "time": "9/14/2021, 4:12:46 AM",
-      "id": 4
-    },
-    {
-      "text": "lmao",
-      "userId": 2,
-      "time": "9/14/2021, 4:12:51 AM",
-      "id": 5
-    },
-    {
-      "text": "jjj",
-      "userId": 1,
-      "time": "9/14/2021, 4:16:54 AM",
-      "id": 6
-    },
-    {
-      "text": "jjj",
-      "userId": 1,
-      "time": "9/14/2021, 4:16:56 AM",
-      "id": 7
-    },
-    {
-      "text": "hi",
-      "userId": 1,
-      "time": "9/14/2021, 4:37:18 AM",
-      "id": 8
-    },
     {
       "text": "This is a serious post just like tweeters post this is an important post. this is some long text",
       "userId": 1,
@@ -79,6 +37,12 @@
       "userId": 3,
       "time": "9/14/2021, 4:53:48 AM",
       "id": 10
+    },
+    {
+      "text": "today's post is very short by aryan a2@gmail.com",
+      "userId": 1,
+      "time": "9/14/2021, 12:16:16 PM",
+      "id": 11
     }
   ]
 }

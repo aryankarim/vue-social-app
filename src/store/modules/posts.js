@@ -33,7 +33,6 @@ const actions = {
       },
     });
     const data = await res.json();
-    console.log(data);
     commit('setPosts', data);
   },
 };
