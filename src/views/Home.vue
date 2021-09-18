@@ -43,7 +43,12 @@ export default {
   methods: {
     ...mapActions(['addNewPost', 'fetchPosts']),
     addPost() {
-      this.addNewPost({ text: this.text, userId: this.user.userInfo.id });
+      this.addNewPost({
+        text: this.text,
+        userId: this.user.userInfo.id,
+        username: this.user.userInfo.username,
+      });
+      this.text = '';
     },
   },
   created() {
@@ -77,8 +82,14 @@ export default {
 
 .card .date {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 2px;
+  right: 4px;
+  color: #3677b3;
+}
+.card .username {
+  position: absolute;
+  top: 2px;
+  left: 5px;
   color: #3677b3;
 }
 @media screen and (max-width: 900px) {

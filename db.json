@@ -29,44 +29,48 @@
       "password": "$2a$10$fjSwV8f4O97OYjSIYx.SQOPGKTUfqX1zJk3V/qK/KUJvrCkM7DFim",
       "username": "Aryan Majeed",
       "id": 5
+    },
+    {
+      "email": "aryanmajeed97@outlook.com",
+      "password": "$2a$10$VGukoJNgGDMFMGk5DcTRlO59aUxX42tZJNsTFkloBm79ie9w3DOKC",
+      "username": "Aryan97",
+      "id": 6
+    },
+    {
+      "email": "test@gmail.com",
+      "password": "$2a$10$Fi42ZB8yoly5kqhjdV1bJO4Ct.eB.t52zNiG49oCjy9teshc3lZOe",
+      "username": "aryan",
+      "id": 7
     }
   ],
   "posts": [
     {
-      "text": "This is a serious post just like tweeters post this is an important post. this is some long text",
+      "text": "Hello World this post contains some good words and sayings",
+      "userId": 6,
+      "username": "Aryan97",
+      "time": "9/14/2021, 6:36:24 PM",
+      "id": 3
+    },
+    {
+      "text": "Lorem epsum Lorem epsum Lorem epsum Lorem epsum Lorem epsum Lorem epsum Lorem epsum Lorem epsum Lorem epsum ",
       "userId": 1,
-      "time": "9/14/2021, 4:51:10 AM",
-      "id": 9
+      "username": "aryan",
+      "time": "9/14/2021, 6:37:45 PM",
+      "id": 4
     },
     {
-      "text": "Hello world im a new user my email is aryan@gmail.com",
-      "userId": 3,
-      "time": "9/14/2021, 4:53:48 AM",
-      "id": 10
+      "text": "This is a post made from another incognito browser ",
+      "userId": 6,
+      "username": "Aryan97",
+      "time": "9/14/2021, 6:40:17 PM",
+      "id": 5
     },
     {
-      "text": "today's post is very short by aryan a2@gmail.com",
-      "userId": 1,
-      "time": "9/14/2021, 12:16:16 PM",
-      "id": 11
-    },
-    {
-      "text": "Hey does anyone have any water?",
-      "userId": 1,
-      "time": "9/14/2021, 1:49:30 PM",
-      "id": 12
-    },
-    {
-      "text": "Hey the router and vuex is working fine ig",
-      "userId": 1,
-      "time": "9/14/2021, 4:08:01 PM",
-      "id": 13
-    },
-    {
-      "text": "Lorem Epsum Lorem Epsum Lorem Epsum Lorem Epsum Lorem Epsum Lorem EpsumLorem Epsum Lorem EpsumLorem Epsum Lorem Epsum   ",
-      "userId": 5,
-      "time": "9/14/2021, 4:52:56 PM",
-      "id": 14
+      "text": "lmao",
+      "userId": 7,
+      "username": "aryan",
+      "time": "9/15/2021, 5:47:48 PM",
+      "id": 6
     }
   ]
 }
