@@ -1,21 +1,20 @@
 <template>
-  <h1>Home Page</h1>
+  <h1>{{ $t('shared.home') }}</h1>
   <div class="container">
     <div class="innerContainer">
       <div>
-        <h2>Add Post</h2>
+        <h2>{{ $t('home.addPost') }}</h2>
         <form class="login" @submit.prevent="addPost">
-          <label>Post content</label>
           <input
             required
             v-model="text"
             type="text"
-            placeholder="Write whats on your mind..."
+            :placeholder="$t('home.writePost')"
             autocomplete
           />
           <div>{{ feedback }}</div>
           <hr />
-          <input type="submit" value="Publish Post" />
+          <input type="submit" :value="$t('home.publishPost')" />
         </form>
       </div>
     </div>

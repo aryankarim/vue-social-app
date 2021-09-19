@@ -1,0 +1,29 @@
+{
+  "navBar": {
+    "signout": "Sign Out"
+  },
+  "profile": {
+    "personalInfo": "Personal Info"
+  },
+  "home": {
+    "addPost": "Add Posts",
+    "writePost": "Write what is on your mind ...",
+    "publishPost": "Publish Post",
+    "todayPosts": "Today's Posts"
+  },
+  "shared": {
+    "profile": "Profile",
+    "signup": "Sign Up",
+    "home": "Home",
+    "signin": "Sign In",
+    "username": "Username",
+    "email": "Email",
+    "password": "Password"
+  },
+  "languages": {
+    "languages": "languages",
+    "english": "English",
+    "kurdish": "Kurdish",
+    "arabic": "Arabic"
+  }
+}

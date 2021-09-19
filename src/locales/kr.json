@@ -1,0 +1,29 @@
+{
+  "navBar": {
+    "signout": "هاتنەدەرەوە"
+  },
+  "profile": {
+    "personalInfo": "زانیاری هەژمار"
+  },
+  "home": {
+    "addPost": "زیادکردنی پۆست",
+    "writePost": "بنووسە چی لە مێشکتدایە ...",
+    "publishPost": "بلاوکردنەوەی پۆست",
+    "todayPosts": "پۆستەکانی ئەمرۆ"
+  },
+  "shared": {
+    "profile": "هەژمار",
+    "signup": "تۆمارکردن",
+    "home": "سەرەکی",
+    "signin": "چوونەژوورەوە",
+    "username": "ناو",
+    "email": "ئیمەیل",
+    "password": "وشەی نهێنی"
+  },
+  "languages": {
+    "languages": "زمانکان",
+    "english": "ئینگلیزی",
+    "kurdish": "كوردی",
+    "arabic": "عەرەبی"
+  }
+}

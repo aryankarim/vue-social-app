@@ -1,8 +1,8 @@
 <template>
   <div>
     <form class="login" @submit.prevent="login">
-      <h1>Sign in</h1>
-      <label>Email</label>
+      <h1>{{ $t('shared.signin') }}</h1>
+      <label>{{ $t('shared.email') }}</label>
       <input
         required
         v-model="email"
@@ -10,7 +10,7 @@
         placeholder="Email"
         autocomplete
       />
-      <label>Password</label>
+      <label>{{ $t('shared.password') }}</label>
       <input
         required
         v-model="password"
@@ -20,7 +20,7 @@
       />
       <h3>{{ feedback }}</h3>
       <hr />
-      <input type="submit" value="Login" />
+      <input type="submit" :value="$t('shared.signin')" />
     </form>
   </div>
 </template>

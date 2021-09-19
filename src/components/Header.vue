@@ -1,15 +1,17 @@
 <template>
   <div :class="navBarClass">
-    <router-link to="/">Home</router-link>
-    <router-link to="/profile">Profile</router-link>
-    <router-link to="/signup">Sign Up</router-link>
+    <router-link to="/">{{ $t('shared.home') }}</router-link>
+    <router-link to="/profile">{{ $t('shared.profile') }}</router-link>
+    <router-link to="/signup">{{ $t('shared.signup') }} </router-link>
     <router-link
       @click="logoutUser"
       to="/login"
       :style="[user.loggedIn ? { background: '#ff6060' } : '']"
-      >{{ user.loggedIn ? 'Logout' : 'Login' }}</router-link
+      >{{
+        user.loggedIn ? $t('navBar.signout') : $t('shared.signin')
+      }}</router-link
     >
-
+    <Languages />
     <div class="icon" @click="barClick">
       <i class="fa fa-bars fa-2x"></i>
     </div>
@@ -18,8 +20,12 @@
 
 <script>
 import { mapGetters, mapActions } from 'vuex';
+import Languages from './Languages.vue';
 export default {
   name: 'Header',
+  components: {
+    Languages,
+  },
   data() {
     return {
       navBarClass: 'topnav',
@@ -42,8 +48,11 @@ export default {
 </script>
 
 <style scoped>
+.router-link-exact-active {
+  background-color: #616161;
+}
 .topnav {
-  background-color: #333;
+  background-color: #303030;
   overflow: hidden;
 }
 .topnav a {
@@ -61,6 +70,9 @@ export default {
 .topnav a.active {
   background-color: #04aa6d;
   color: white;
+}
+.icon {
+  display: none;
 }
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {

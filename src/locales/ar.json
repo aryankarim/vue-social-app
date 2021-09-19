@@ -1,0 +1,29 @@
+{
+  "navBar": {
+    "signout": "تسجيل الخروج"
+  },
+  "profile": {
+    "personalInfo": "معلومات شخصية"
+  },
+  "home": {
+    "addPost": "إضافة مشاركات",
+    "writePost": "اكتب ما يدور في ذهنك ...",
+    "publishPost": "نشر مشاركة",
+    "todayPosts": "مشاركات اليوم"
+  },
+  "shared": {
+    "profile": "الملف الشخصي",
+    "signup": "تسجيل",
+    "home": "الصفحة الرئيسية",
+    "signin": "تسجيل الدخول",
+    "username": "اسم المستخدم",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور"
+  },
+  "languages": {
+    "languages": "اللغات",
+    "english": "إنجليزي",
+    "kurdish": "كردي",
+    "arabic": "عربي"
+  }
+}

@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>
-      Today's Feed
+      {{ $t('home.todayPosts') }}
       <i class="fa fa-refresh" style="color:#3677b3" @click="refreshPosts"></i>
     </h2>
   </div>

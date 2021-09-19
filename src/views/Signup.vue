@@ -1,9 +1,9 @@
 <template>
   <div>
-    <h1>Sign up</h1>
+    <h1>{{ $t('shared.signup') }}</h1>
     <form @submit.prevent="signup">
       <div>
-        <label for="username">username</label>
+        <label for="username">{{ $t('shared.username') }}</label>
         <input
           type="text"
           name="username"
@@ -13,7 +13,7 @@
         />
       </div>
       <div>
-        <label for="email">email</label>
+        <label for="email">{{ $t('shared.email') }}</label>
         <input
           type="email"
           name="email"
@@ -23,7 +23,7 @@
         />
       </div>
       <div>
-        <label for="password">password</label>
+        <label for="password">{{ $t('shared.password') }}</label>
         <input
           name="password"
           v-model="password"
@@ -35,7 +35,7 @@
       <h3>{{ feedback }}</h3>
 
       <hr />
-      <input type="submit" value="register" />
+      <input type="submit" :value="$t('shared.signup')" />
     </form>
   </div>
 </template>
