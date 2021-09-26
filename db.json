@@ -41,6 +41,12 @@
       "password": "$2a$10$Fi42ZB8yoly5kqhjdV1bJO4Ct.eB.t52zNiG49oCjy9teshc3lZOe",
       "username": "aryan",
       "id": 7
+    },
+    {
+      "email": "a@gmail.com",
+      "password": "$2a$10$85jUBC66j/O9W8YVdtx7O.MBYb87A2dQ1zkHKyORIogL.VoggvM0i",
+      "username": "aryan",
+      "id": 8
     }
   ],
   "posts": [
